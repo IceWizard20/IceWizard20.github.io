@@ -62,7 +62,7 @@
     text-align: center;
     font-size: min(4vh, 2.5vw);
     padding: min(3vh, 1.5vw);
-    width: max(17vw, 150px);
+    width: max(18vw, 150px);
     transition: all 0.5s;
     cursor: pointer;
     margin: min(1vh, 1vw);

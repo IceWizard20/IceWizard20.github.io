@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Speed Trig</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -97,15 +98,15 @@
                         <div class="checkbox-block">
                             <div class="checkbox-row">
                                 <label for="showTimer">Show timer</label>
-                                <input type="checkbox" id="showTimer" checked="true">
+                                <input type="checkbox" id="showTimer" checked="true" onchange="updateTimeDisplay()">
                             </div>
                             <div class="checkbox-row">
                                 <label for="showQuestionNumber">Show question number</label>
-                                <input type="checkbox" id="showQuestionNumber" checked="true">
+                                <input type="checkbox" id="showQuestionNumber" checked="true" onchange="updateScoreDisplay()">
                             </div>
                             <div class="checkbox-row">
                                 <label for="showAccuracy">Show percent accuracy</label>
-                                <input type="checkbox" id="showAccuracy" checked="true">
+                                <input type="checkbox" id="showAccuracy" checked="true" onchange="updateAccuracyDisplay()">
                             </div>
                             <div class="checkbox-row">
                                 <label for="showFeedback">Show correct answer</label>
@@ -118,7 +119,10 @@
                                 <button id="selectAll">Select All</button>
                             </div>
                             <div class="checkbox-row">
-                                <button id="deselectAll">Deselect All</button>
+                                <button id="deselectAll" onclick="deselectAll()">Deselect All</button>
+                            </div>
+                            <div class="checkbox-row">
+                                <button id="resetButton">Reset</button>
                             </div>
                         </div>
                     </div>
